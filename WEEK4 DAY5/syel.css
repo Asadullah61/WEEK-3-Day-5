@@ -1,0 +1,71 @@
+/* ===============================
+   Global Page Styling
+   =============================== */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+
+    /* Center content horizontally */
+    display: flex;
+    justify-content: center;
+
+    /* Center content vertically */
+    align-items: center;
+
+    /* Full height of viewport */
+    height: 100vh;
+}
+
+/* ===============================
+   Task Manager Container
+   =============================== */
+.container {
+    background: white;
+    padding: 20px;
+    width: 320px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Input field and button styling */
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Remove default list styling */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+/* Individual task styling */
+li {
+    background: #eaeaea;
+    padding: 8px;
+    margin-top: 5px;
+
+    /* Align text and delete button */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling for completed tasks */
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* ===============================
+   Mobile Responsive Design
+   =============================== */
+@media (max-width: 600px) {
+
+    /* Make container wider on small screens */
+    .container {
+        width: 90%;
+    }
+}
